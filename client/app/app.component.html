@@ -2,8 +2,5 @@
     <h1 class="text-center">Alurapic</h1>
 </div>
 <div class="container">
-   <foto url="img/leao.jpg" titulo="Um Leão" ></foto>
-   <hr/>
-   <foto url="img/leao-branco.jpg" titulo="Um Leão Branco" ></foto>
-   <foto></foto>
+   <foto *ngFor="let foto of fotos" url="{{foto.url}}" titulo="{{foto.titulo}}" ></foto>
 </div>
